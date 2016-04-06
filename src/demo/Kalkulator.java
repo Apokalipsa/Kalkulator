@@ -68,17 +68,17 @@ public class Kalkulator {
 	}
 
 	public static double mnozenje(int num1, int num2) {
-		
-		return (num1 * num2);
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 	public static double oduzimanje(int num1,int num2) {
-		// TODO Auto-generated method stub
-		return 0;
+	int razlika = num1-num2;
+		return razlika;
 	}
 
 	public static double sabiranje(int num1,int num2) {
-		// TODO Auto-generated method stub
-		return 0;
+		int suma = num1 + num2;
+		return suma;
 	}
 }
