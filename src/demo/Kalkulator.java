@@ -63,8 +63,7 @@ public class Kalkulator {
 	}
 
 	public static double dijeljenje(int num1, int num2) {
-		// TODO Auto-generated method stub
-		return 0;
+		return num2 > 0 ? num1 / num2 : 0.0;
 	}
 
 	public static double mnozenje(int num1, int num2) {
