@@ -12,28 +12,39 @@ public class Kalkulator {
 			num2 = inp.nextInt();
 			int ans;
 			System.out.println(
-					"Unesite opciju za izbor operacije: 1 za Sabiranje, 2 za Oduzimanje, 3 za Mnozenje, 4 za Dijeljenje,5 za Kvadratiranje i 6 za Korjenovanje :");
+					"Izbor operacije:\n1 Sabiranje \n2 Oduzimanje \n3 Mnozenje \n4 Dijeljenje \n5 Korjenovanje \n6 Kvadriranje \n7 Izlaz");
 			int choose;
 			choose = inp.nextInt();
 			switch (choose) {
 			case 1:
-				System.out.println(sabiranje(num1, num2));
+				System.out.println("Rezultat : " + sabiranje(num1, num2));
+				
 				break;
 			case 2:
-				System.out.println(oduzimanje(num1, num2));
+				System.out.println("Rezultat : " + oduzimanje(num1, num2));
+				
 				break;
 			case 3:
-				System.out.println(mnozenje(num1, num2));
+				System.out.println("Rezultat : " + mnozenje(num1, num2));
+				
 				break;
 			case 4:
-				System.out.println(dijeljenje(num1, num2));
+				System.out.println("Rezultat : " + dijeljenje(num1, num2));
+				
 				break;
 			case 5:
-				System.out.println(kvadratiranje(num1, num2));
+				System.out.println("Rezultat : " + kvadratiranje(num1, num2));
+				
 				break;
 			case 6:
-				System.out.println(korjenovanje(num1, num2));
+				System.out.println("Rezultat : " + korjenovanje(num1, num2));
+				
 				break;
+			
+		case 7: {
+			System.out.println("Hvala Vam na koristenju nasih usluga! ");
+			System.exit(1);
+		}
 
 			default:
 				System.out.println("Nedostupna Operacija");
