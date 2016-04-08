@@ -12,7 +12,7 @@ public class Kalkulator {
 			num2 = inp.nextInt();
 			int ans;
 			System.out.println(
-					"Izbor operacije:\n1 Sabiranje \n2 Oduzimanje \n3 Mnozenje \n4 Dijeljenje \n5 Korjenovanje \n6 Kvadriranje \n7 Izlaz");
+					"Izbor operacije:\n1 Sabiranje \n2 Oduzimanje \n3 Mnozenje \n4 Dijeljenje \n5 Kvadriranje  \n6 Korjenovanje  \n7 Izlaz");
 			int choose;
 			choose = inp.nextInt();
 			switch (choose) {
@@ -33,12 +33,16 @@ public class Kalkulator {
 				
 				break;
 			case 5:
-				System.out.println("Rezultat : " + kvadratiranje(num1, num2));
+				System.out.println("Rezultat : ");
+				System.out.println(num1+"^2 = "+kvadratiranje(num1));
+				System.out.println(num2+"^2 = "+kvadratiranje(num2));
 				
 				break;
 			case 6:
-				System.out.println("Rezultat : " + korjenovanje(num1, num2));
-				
+				System.out.println("Rezultat : ");
+				System.out.println("Korjen iz "+num1+" = "+korjenovanje(num1));
+				System.out.println("Korjen iz "+num2+" = "+korjenovanje(num2));
+
 				break;
 			
 		case 7: {
@@ -55,14 +59,14 @@ public class Kalkulator {
 
 	}
 
-	public static double korjenovanje(int num1, int num2) {
+	public static double korjenovanje(int num1) {
 		// TODO Auto-generated method stub
-		return 0;
+		return Math.sqrt(num1);
 	}
 
-	public static double kvadratiranje(int num1, int num2) {
+	public static double kvadratiranje(int num1) {
 		// TODO Auto-generated method stub
-		return 0;
+		return num1*num1;
 	}
 
 	public static double dijeljenje(int num1, int num2) {
